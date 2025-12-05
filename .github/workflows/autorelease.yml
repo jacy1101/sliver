@@ -119,12 +119,12 @@ jobs:
       # MacOS
       - name: MacOS AMD64
         run: |
-          gpg --default-key 4449039C --output ./artifacts/sliver-server_macos-amd64.sig --detach-sig ./artifacts/sliver-server_macos-amd64
-          gpg --default-key 4449039C --output ./artifacts/sliver-client_macos-amd64.sig --detach-sig ./artifacts/sliver-client_macos-amd64
+          gpg --default-key 4449039C --output ./artifacts/sliver-server_darwin-amd64.sig --detach-sig ./artifacts/sliver-server_darwin-amd64
+          gpg --default-key 4449039C --output ./artifacts/sliver-client_darwin-amd64.sig --detach-sig ./artifacts/sliver-client_darwin-amd64
       - name: Package MacOS ARM64
         run: |
-          gpg --default-key 4449039C --output ./artifacts/sliver-server_macos-arm64.sig --detach-sig ./artifacts/sliver-server_macos-arm64
-          gpg --default-key 4449039C --output ./artifacts/sliver-client_macos-arm64.sig --detach-sig ./artifacts/sliver-client_macos-arm64
+          gpg --default-key 4449039C --output ./artifacts/sliver-server_darwin-arm64.sig --detach-sig ./artifacts/sliver-server_darwin-arm64
+          gpg --default-key 4449039C --output ./artifacts/sliver-client_darwin-arm64.sig --detach-sig ./artifacts/sliver-client_darwin-arm64
 
       # FreeBSD
       - name: FreeBSD AMD64 (Client Only)
