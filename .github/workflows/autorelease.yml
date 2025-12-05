@@ -129,10 +129,10 @@ jobs:
       # FreeBSD
       - name: FreeBSD AMD64 (Client Only)
         run: |
-          gpg --default-key 4449039C --output ./artifacts/sliver-client_freebsd-amd64.sig --detach-sig ./artifacts/sliver-client_freebsd-amd64.exe
+          gpg --default-key 4449039C --output ./artifacts/sliver-client_freebsd-amd64.sig --detach-sig ./artifacts/sliver-client_freebsd-amd64
       - name: FreeBSD ARM64 (Client Only)
         run: |
-          gpg --default-key 4449039C --output ./artifacts/sliver-client_freebsd-arm64.sig --detach-sig ./artifacts/sliver-client_freebsd-arm64.exe
+          gpg --default-key 4449039C --output ./artifacts/sliver-client_freebsd-arm64.sig --detach-sig ./artifacts/sliver-client_freebsd-arm64
 
       - name: "Publish Release"
         uses: "bishopfox/action-gh-release@v1"
